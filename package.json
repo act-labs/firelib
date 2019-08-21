@@ -1,0 +1,45 @@
+{
+  "name": "firelib",
+  "description": "React hooks and components for firebase",
+  "version": "0.1.0",
+  "author": "Act Labs <act7labs@gmail.com>",
+  "scripts": {
+    "build": "babel src/components --out-dir lib --ignore **/__tests__ && gulp copy",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir lib --ignore **/__tests__",
+    "test": "jest --passWithNoTests"
+  },
+  "engines": {
+    "node": "10.12"
+  },
+  "dependencies": {
+    "react-use": "^9.4.0"    
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "firebase": "^6.3.4",
+    "debug": "^4.1.1",
+    "antd": "^3.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "cross-env": "^5.1.4",
+    "gulp": "^4.0.2",
+    "babel-plugin-import": "^1.11.0"        
+  },
+  "keywords": [
+    "firebase",
+    "React",
+    "Ant Design",
+    "React Hooks",
+    "Login form"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/act-labs/firelib"
+  }
+}
